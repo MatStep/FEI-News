@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FEI_News.Views.Articles">
+    <StackLayout>
+        <ListView x:Name="PostsListView" RowHeight="80" ItemTapped="listView_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="5">
+                            <Image Source="{Binding ImgUrl}"/>
+                            <StackLayout HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding TitleString}" TextColor="Blue"/>
+                                <Label Text="{Binding ContentString}" TextColor="Gray" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
