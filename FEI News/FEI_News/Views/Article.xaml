@@ -2,5 +2,9 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FEI_News.Views.Article">
-    <Label Text="{Binding Id}" FontSize="Medium" FontAttributes="Bold" />
+    <ContentPage.Content>
+        <StackLayout>
+            <WebView x:Name="Browser" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand"></WebView>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

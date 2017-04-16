@@ -63,8 +63,8 @@ namespace FEI_News.Views
         private async void listView_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var post = e.Item as Post;
-            var article = new Article();
-            article.BindingContext = post.Id;
+            var article = new Article(post);
+            article.BindingContext = post;
             await Navigation.PushAsync(article);
         }
 
