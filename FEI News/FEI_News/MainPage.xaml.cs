@@ -27,23 +27,21 @@ namespace FEI_News
             var page1 = new MasterPageItem() { Title = "Články", Icon = "ic_shortcut_format_color_text.png", TargetType = typeof(Articles) };
             var page2 = new MasterPageItem() { Title = "Šablóny", Icon = "itemIcon2.png", TargetType = typeof(Templates) };
             var page3 = new MasterPageItem() { Title = "Otváracie hodiny", Icon = "itemIcon3.png", TargetType = typeof(OpeningHours) };
-            //var page4 = new MasterPageItem() { Title = "Item 4", Icon = "itemIcon4.png", TargetType = typeof(TestPage1) };
-            //var page5 = new MasterPageItem() { Title = "Item 5", Icon = "itemIcon5.png", TargetType = typeof(TestPage2) };
-            //var page6 = new MasterPageItem() { Title = "Item 6", Icon = "itemIcon6.png", TargetType = typeof(TestPage3) };
-            //var page7 = new MasterPageItem() { Title = "Item 7", Icon = "itemIcon7.png", TargetType = typeof(TestPage1) };
-            //var page8 = new MasterPageItem() { Title = "Item 8", Icon = "itemIcon8.png", TargetType = typeof(TestPage2) };
-            //var page9 = new MasterPageItem() { Title = "Item 9", Icon = "itemIcon9.png", TargetType = typeof(TestPage3) };
+            var page4 = new MasterPageItem() { Title = "Zdroje informácií", Icon = "itemIcon4.png", TargetType = typeof(InformationSources) };
+            var page5 = new MasterPageItem() { Title = "Kalendár udalostí", Icon = "itemIcon5.png", TargetType = typeof(Calendar) };
+            var page6 = new MasterPageItem() { Title = "Softvér pre študentov", Icon = "itemIcon6.png", TargetType = typeof(Software) };
+            var page7 = new MasterPageItem() { Title = "Harmonogram štúdia", Icon = "itemIcon7.png", TargetType = typeof(StudySchedule) };
+            var page8 = new MasterPageItem() { Title = "Rozvrh skúšok", Icon = "itemIcon8.png", TargetType = typeof(Exams) };
 
             // Adding menu items to menuList
             menuList.Add(page1);
             menuList.Add(page2);
             menuList.Add(page3);
-            //menuList.Add(page4);
-            //menuList.Add(page5);
-            //menuList.Add(page6);
-            //menuList.Add(page7);
-            //menuList.Add(page8);
-            //menuList.Add(page9);
+            menuList.Add(page4);
+            menuList.Add(page5);
+            menuList.Add(page6);
+            menuList.Add(page7);
+            menuList.Add(page8);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = menuList;

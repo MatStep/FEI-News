@@ -15,19 +15,21 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using System.Net;
 using System.Text.RegularExpressions;
+using FEI_News.Managers;
 
 namespace FEI_News.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Articles : ContentPage
     {
-        private const string Url = "http://mechatronika.cool/noviny/wp-json/wp/v2/posts";
-        private HttpClient client = new HttpClient();
+        private HttpManager httpManager;
         private ObservableCollection<Post> _posts;
 
         public Articles()
         {
             InitializeComponent();
+
+            httpManager = HttpManager.Instance;
 
             Title = "Články";
         }
@@ -37,10 +39,16 @@ namespace FEI_News.Views
             return Regex.Replace(source, "<.*?>", string.Empty);
         }
 
+        public static string Truncate(string value, int maxLength)
+        {
+            if (string.IsNullOrEmpty(value)) return value;
+            return value.Length <= maxLength ? value : value.Substring(0, maxLength) + "...";
+        }
+
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            var content = await client.GetStringAsync(Url);
+            var content = await httpManager.Client.GetStringAsync(HttpManager.PostsUrl);
             var posts = JsonConvert.DeserializeObject<List<Post>>(content);
             _posts = new ObservableCollection<Post>(posts);
             for (int i = 0; i < _posts.Count; i++)
@@ -55,7 +63,7 @@ namespace FEI_News.Views
                     string href = m.Groups[1].Value;
                     posts[i].ImgUrl = href;
                 }
-                _posts[i].ContentString = StripTags(WebUtility.HtmlDecode(_posts[i].Content.ContentText));
+                _posts[i].ContentString = Truncate(StripTags(WebUtility.HtmlDecode(_posts[i].Content.ContentText)), 150);
             }
             PostsListView.ItemsSource = _posts;
         }

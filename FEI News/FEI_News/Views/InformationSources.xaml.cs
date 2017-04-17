@@ -3,11 +3,9 @@ using FEI_News.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
-using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
@@ -16,18 +14,18 @@ using Xamarin.Forms.Xaml;
 namespace FEI_News.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Templates : ContentPage
+    public partial class InformationSources : ContentPage
     {
         private HttpManager httpManager;
-        private int id = 57;
+        private int id = 64;
 
-        public Templates()
+        public InformationSources()
         {
             InitializeComponent();
 
             httpManager = HttpManager.Instance;
 
-            Title = "Šablóny";
+            Title = "Zdroje informácií";
         }
 
         protected override async void OnAppearing()
@@ -39,12 +37,7 @@ namespace FEI_News.Views
             post.TitleString = WebUtility.HtmlDecode(post.Title.TitleText);
             post.ContentString = post.Content.ContentText;
 
-            String finalString = post.ContentString.Replace("http://", "<a href='http://");
-            // Ad hoc solution...
-            finalString = finalString.Replace("%B3na", "%B3na'>link</a>");
-            finalString = finalString.Replace("/Predmety/Sablony", "/Predmety/Sablony'>link</a>");
-
-            Browser.Source = httpManager.CreateHtmlView(finalString);
+            Browser.Source = httpManager.CreateHtmlView(post.ContentString);
 
             Browser.Navigating += (s, e) =>
             {

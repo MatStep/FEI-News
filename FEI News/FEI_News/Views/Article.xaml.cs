@@ -1,4 +1,5 @@
-﻿using FEI_News.Model;
+﻿using FEI_News.Managers;
+using FEI_News.Model;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -16,14 +17,15 @@ namespace FEI_News.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Article : ContentPage
     {
-        private const string Url = "http://mechatronika.cool/noviny/wp-json/wp/v2/posts";
-        private HttpClient client = new HttpClient();
+        private HttpManager httpManager;
         private Post post;
         private int id;
 
         public Article(Post post)
         {
             InitializeComponent();
+
+            httpManager = HttpManager.Instance;
 
             this.post = post;
 
@@ -35,7 +37,7 @@ namespace FEI_News.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            var content = await client.GetStringAsync(Url + "/" + id);
+            var content = await httpManager.Client.GetStringAsync(HttpManager.PostsUrl + "/" + id);
             //var post = JsonConvert.DeserializeObject<Post>(content);
             post.ContentString = post.Content.ContentText;
 
@@ -55,6 +57,7 @@ namespace FEI_News.Views
             sb.Append("</body></HTML>");
             htmlSource.Html = sb.ToString();
             Browser.Source = htmlSource;
+
         }
     }
 }
