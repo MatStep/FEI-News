@@ -29,7 +29,7 @@ namespace FEI_News.Views
 
             this.post = post;
 
-            Title = post.TitleString;
+            Title = "FEI Noviny";
 
             id = post.Id;
         }
@@ -47,6 +47,8 @@ namespace FEI_News.Views
             {
                 String css = streamReader.ReadToEnd();
             }
+
+            title.Text = post.TitleString;
 
             StringBuilder sb = new StringBuilder();
             sb.Append("<HTML><HEAD>" +

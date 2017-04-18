@@ -31,7 +31,7 @@ namespace FEI_News.Views
 
             httpManager = HttpManager.Instance;
 
-            Title = "Články";
+            Title = "FEI Noviny";
         }
 
         public static string StripTags(string source)

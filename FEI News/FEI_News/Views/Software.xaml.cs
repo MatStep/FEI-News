@@ -39,7 +39,7 @@ namespace FEI_News.Views
 
             String finalString = post.ContentString.Replace("https://", "<a href='https://");
             // Ad hoc solution...
-            finalString = finalString.Replace("/<br>", "/'>link</a><br>");
+            finalString = finalString.Replace("/<br />", "/'>link</a><br />");
             finalString = finalString.Replace("/</p>", "/'>link</a></p>");
 
             Browser.Source = httpManager.CreateHtmlView(finalString);
