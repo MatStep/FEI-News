@@ -17,7 +17,9 @@ namespace FEI_News.Views
     public partial class Software : ContentPage
     {
         private HttpManager httpManager;
-        private int id = 79;
+        private int idInformatics = 79;
+        private int idHardware = 83;
+        private int idElectro = 85;
 
         public Software()
         {
@@ -31,15 +33,45 @@ namespace FEI_News.Views
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            var content = await httpManager.Client.GetStringAsync(HttpManager.PageUrl + "/" + id);
+
+            String finalString = "";
+            String contentString = "";
+
+            // Informatics
+            // =================
+            var content = await httpManager.Client.GetStringAsync(HttpManager.PageUrl + "/" + idInformatics);
             var post = JsonConvert.DeserializeObject<Post>(content);
 
             post.TitleString = WebUtility.HtmlDecode(post.Title.TitleText);
             post.ContentString = post.Content.ContentText;
 
-            String finalString = post.ContentString.Replace("https://", "<a href='https://");
+            contentString = "<h2>" + post.Title.TitleText + "</h2>" + post.ContentString.Replace("https://", "<a href='https://");
+            finalString = finalString + contentString;
+
+            // Hardware
+            // =================
+            content = await httpManager.Client.GetStringAsync(HttpManager.PageUrl + "/" + idHardware);
+            post = JsonConvert.DeserializeObject<Post>(content);
+
+            post.TitleString = WebUtility.HtmlDecode(post.Title.TitleText);
+            post.ContentString = post.Content.ContentText;
+
+            contentString = "<h2>" + post.Title.TitleText + "</h2>" + post.ContentString.Replace("https://", "<a href='https://");
+            finalString = finalString + contentString;
+
+            // Electro
+            // =================
+            content = await httpManager.Client.GetStringAsync(HttpManager.PageUrl + "/" + idElectro);
+            post = JsonConvert.DeserializeObject<Post>(content);
+
+            post.TitleString = WebUtility.HtmlDecode(post.Title.TitleText);
+            post.ContentString = post.Content.ContentText;
+
+            contentString = "<h2>" + post.Title.TitleText + "</h2>" + post.ContentString.Replace("https://", "<a href='https://");
+            finalString = finalString + contentString;
             // Ad hoc solution...
-            finalString = finalString.Replace("/<br />", "/'>link</a><br />");
+            finalString = finalString.Replace("http://", "<a href='http://");
+            finalString = finalString.Replace("<br />", "'>link</a><br />");
             finalString = finalString.Replace("/</p>", "/'>link</a></p>");
 
             Browser.Source = httpManager.CreateHtmlView(finalString);

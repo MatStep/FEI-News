@@ -50,15 +50,7 @@ namespace FEI_News.Views
 
             title.Text = post.TitleString;
 
-            StringBuilder sb = new StringBuilder();
-            sb.Append("<HTML><HEAD>" +
-                "<meta name = \"viewport\" content = \"width=device-width, initial-scale=1\">" +
-                "<style> embed, iframe, object {margin-bottom: 1.5em; max-width: 100%;} </style>" +
-                "</HEAD><body>");
-            sb.Append(post.ContentString);
-            sb.Append("</body></HTML>");
-            htmlSource.Html = sb.ToString();
-            Browser.Source = htmlSource;
+            Browser.Source = httpManager.CreateHtmlView(post.ContentString);
 
         }
     }

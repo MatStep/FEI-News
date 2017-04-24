@@ -1,0 +1,109 @@
+PRAC;KOD;PREDMET;RT_DAT;RT_CAS;RT_MIEST;OT_DAT;OT_CAS;OT_MIEST
+IKAL;B-AJ1;Anglickı jazyk 1;cez semester;dohodou;dohodou;27.1.;12;ab150
+IKAL;B-MAKO;Manament komunikácie;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+IKAL;B-NJ;Nemeckı jazyk;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+IKAL;B-RJ;Ruskı jazyk;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚAM;B-ELSA;Elektronické systémy automobilov;13.1.;1;a801;3.2.;1;a801
+ÚAM;B-MECH;Mechanika;11.1.;1;ab300+150;8.2.;1;a806
+ÚAM;B-MSLAB;Modelovanie a simulácia v prostredí Matlab;17.1.;1;cd150;6.2.;1;d113
+ÚAM;B-PLCM;PLC systémy v mechatronike;21.12.;9,00;t015;18.1.;9,00;t015
+ÚAM;B-SAEMOB;Stavba automobilov a elektromobilov;10.1.;2;a806;1.2.;1;a801
+ÚAM;B-SAR2;Systémy automatického riadenia 2;19.12.;1;cpu;30.1.;1;cpu
+ÚAM;B-UIE;Úvod do ininierstva;16.1.;1;ab+bc+cd300+150;1.2.;1;ab300+150
+ÚAM;B-UII;Úvod do ininierstva;13.1.;1+2;cpu;1.2.;1;cpu
+ÚAM;B-UIT;Úvod do ininierstva;18.1.;1+2;cpu;1.2.;2;cpu
+ÚAM;B-VIPROT;Virtuálne prototypovanie;20.1.;1;a806;8.2.;1;a806
+ÚAM;B-WEBTE1;Webové technológie 1;10.1.;1;cpu;dohodou;;
+ÚAM;I-ASRAV;Automatizované systémy riadenia automobilovıch vırob;12.1.;2;cd35;31.1.;2;d113
+ÚAM;I-BMS;Biomechatronické systémy;19.12.;1;de35;dohodou;;
+ÚAM;I-CAEMS;CAE mechatronickıch systémov;13.1.;1;a806+a711;1.2.;1;a806+a711
+ÚAM;I-CSPMS;CAD  systémy a projektovanie mechatronickıch systémov;23.1.;1;cd35;1.2.;1;cd35
+ÚAM;I-MKP;Metóda koneènıch prvkov;9.1.;10,00;a806;3.2.;1;a806
+ÚAM;I-MRNMS;Modelovanie a riadenie nelin. mechatronickıch systémov;16.1.;1;cpu;6.2.;1;cpu
+ÚAM;I-MTMP;Multimédiá a telematika pre mobilné platformy;16.1.;123;cpu+bc150;27.1.;2;cpu
+ÚAM;I-NPAE;Nekonvenèné pohony automobilov a elektromobilov;18.1.;1+2;a801;dohodou;;a801
+ÚAM;I-OPM;Optimalizácia procesov v mechatronike;23.1.;1;de150;10.2.;1;cd35
+ÚAM;I-OSA;Osvetlovacie systémy automobilov;20.12.;1;a806;9.2.;1;a806
+ÚAM;I-PHSMA;Pneumatické a hydraulické systémy v mechatronickıch aplikáciách;18.1.;1;a806;8.2.;1;a806
+ÚAM;I-PMRMS;Pokroèilé metódy riadenia mechatronickıch systémov;9.1.;10,00;d113;30.1.;10,00;d113
+ÚAM;I-SZJE;Strojné zariadenia jadrovıch elektrární;9.1.;1+2;a801;23.1.;1+2;a801
+ÚAM;I-TSAE;Transmisné systémy automobilov a elektromobilov;26.1.;1;a806;9.2.;1;a806
+ÚAM;I-VPPMS;Vıvojové programové prostredia  pre mechatronické systémy;20.12.;2;bc150;6.2.;2;b704
+ÚE;B-APROG;Aplikaèné programovanie;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚE;B-ELINFO;Elektrotechnika;17.1.;1;ab+bc300;2.2.;1;de300
+ÚE;B-ELRAK;Elektrotechnika;12.1.;3;de150;2.2.;2;de150
+ÚE;B-ELT1;Elektrotechnika 1;13.1.;1;cd+de150;1.2.;1;de150
+ÚE;B-ELT2E;Elektrotechnika 2;13.1.;1;cd+de300;1.2.;1;cd300
+ÚE;B-ELT2I;Elektrotechnika 2;13.1.;1;ab+bc300;1.2.;1;bc300
+ÚE;B-EMC;Elektromagnetická kompatibilita;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚE;B-MER1;Meracia technika 1;20.1.;1;cd+de300;6.2.;1;cd300
+ÚE;B-MER2;Meracia technika 2;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚE;B-MIP1;Mikroprocesorová technika 1;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚE;I-ASEO2;Analıza a syntéza elektrickıch obvodov 2;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚE;I-CSSE;Èíslicové spracovanie signálov;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚE;I-DMS;Distribuované meracie systémy;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚE;I-MIP2;Mikroprocesorová technika 2;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚE;I-NM;Numerické metódy;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚE;I-SPAE;Spoloèenské a právne aspekty v elektrotechnike;dohodou;dohodou;dohodou;dohodou;dohodou;dohodou
+ÚEAE;B-BEZ;Bezpeènos v elektrotechnike;16.12.;1 234;cpu;8.2.;12;cpu
+ÚEAE;B-EKENS;Ekonomika energetickıch systémov;21.12.+18.1.;2;cd300;1.2.;2;de300
+ÚEAE;B-ELEK1;Elektrárne  1;16.1.;2;cd150;3.2.;1;LVNT
+ÚEAE;B-ELSTR;Elektrické stroje;25.1.;2;cd150;8,2;2;c313
+ÚEAE;B-ENEF;Energetická efektívnos;21.12.+18.1.;2;ab300;1.2.;2;de300
+ÚEAE;B-MODEE;Základy modelovania v elektroenergetike;21.12.;2;c313;30.1.;2;c313
+ÚEAE;B-SEPS;Solárne energetické prvky a systémy;5.1.;2;cd150;1.2.;2;cd35
+ÚEAE;B-SVET;Svetelná technika;11.1.;2;c313;6.2.;2;c313
+ÚEAE;B-TVN;Technika vysokıch napätí;20.1.;1;LVNT;10.2.;1;LVN
+ÚEAE;I-BEZ;Bezpeènos v elektrotechnike;16.12.;1 234;cpu;8.2.;12;cpu
+ÚEAE;I-DSPROJ;Distribuèné siete a projektovanie;17.1.;3;cd300;6.2.;3;cd150
+ÚEAE;I-ESP;Elektrické stanice a prístroje;9.1.;2;c301;1.2.;2;c301
+ÚEAE;I-FKMET;Fotometria a kolorimetria;;;;;;
+ÚEAE;I-IEIB;Inteligentné elektrické inštalácie budov;20.1.;3;cd300;8.2.;3;cd150
+ÚEAE;I-IEKO;Ininierska ekológia;12.1.;2;c301;3.2.;2;c301
+ÚEAE;I-INSEMOB;Inteligentné siete v e-mobilite;21.12.;1;bc150;3.2.;1;bc35
+ÚEAE;I-MOVK;Metalické a optické vodièe a káble;16.1.;2;c301;6.2.;2;c301
+ÚEAE;I-OAES;Ochrany a automatiky v elektrizaènej sústave;12.1.;1;cd300;3.2.;1;cd150
+ÚEAE;I-OES;Ostrovné energetické systémy;23.1.;2;LVNT;10.2.;2;LVNT
+ÚEAE;I-OZS;Osvet¾ovacie zariadenia a sústavy;21.12.;1;cd150;27.1.;1;c301
+ÚEAE;I-PVE;Pohony a vıkonová elektronika;20.1.;2;c301;8.2.;2;c301
+ÚEAE;I-RES;Riadenie elektrizaènej sústavy;3.1.;1;cd300;1.2.;1;cd150
+ÚEAE;I-STA;Svetelnotechnické aplikácie;5.1.;2;c301;30.1.;2;c301
+ÚEAE;I-USES;Ustálené stavy v elektrizaènej sústave;19.12.;2;c301;27.1.;2;c301
+ÚEF;B-CIMO;Èíslicové a impulzové obvody;16.1.;1;de150;30.1.;1;e701
+ÚEF;B-ENMAT-K;Elektronika materiálov;;;;;;
+ÚEF;B-EPO;Elektronické prvky a obvody;25.1.;1;cd300;3.2.;1;de300
+ÚEF;B-EPON;Elektronické prvky a obvody;25.1.;1;de300;3.2.;1;de300
+ÚEF;B-LSI;Logické systémy API;16.1.;2;všetky 300;25.1.;2;cd+de300
+ÚEF;B-LSI;Logické systémy ELN+RK;16.1.;3;ab+bc+cd300, cd150;25.1.;2;cd+de300
+ÚEF;B-ME;Mikroelektronika;23.1.;2;de150;8.2.;2;e702
+ÚEF;B-MPP;Mikropoèítaèe a ich programovanie (AI);27.1.;2;všetky 300;7.2.;2;ab+bc300
+ÚEF;B-MPP;Mikropoèítaèe a ich programovanie (EN, TL);17.1.;1;cd+de300;7.2.;2;cd300
+ÚEF;B-OPTEL;Optoelektronika;10.1.;2;de150;7.2.;2;e702
+ÚEF;B-SENZ;Senzorika;21.12.;2;de150;1.2.;2;e701
+ÚEF;I-CAEEP;CAE elektronickıch prvkov;21.12.;2;de300;2.2.;2;e702
+ÚEF;I-CISPSI;Èíslicové spracovanie signálov;3.1.;1;de300;7.2.;1;e701
+ÚEF;I-FTN;Fotonika;16.1.;2;de150;dohodou;;e701-2
+ÚEF;I-MAMS;Metódy analızy materiálov a štruktúr;20.12.;2;de150;31.1.;2;e702
+ÚEF;I-MMEDT;Multimediálna technika;19.12.;2;e701;dohodou;;e701-2
+ÚEF;I-NSE;Nanoeletronika a supravodièová elektronika;5.1.;2;de150;dohodou;;e701-2
+ÚEF;I-OKS-EN;Optické komunikaèné systémy;11.1.;2;de150;2.2.;2;e701-2
+ÚEF;I-PAO;Poèítaèová analıza obvodov;10.1.;2;cpu;31.1.;2;cpu
+ÚEF;I-RST;Rádiokomunikaèné systémy a trasy;3.1.;2;de150;dohodou;;e701-2
+ÚEF;I-SMIK;Senzorové mikrosystémy;24.1.;2;de300;7.2.;2;e701
+ÚEF;I-TMEDT;Telemedicínska technika;19.1.;3;de150;dohodou;2;e701-2
+ÚIM;B-AZA;Analıza a zloitos algoritmov;19.1.;1;ab+bc+cd300;31.1.;2;ab+bc300
+ÚIM;B-DUS;Diskrétne udalostné systémy;13.1.;3;všetky 300;1.2.;3;ab+bc300
+ÚIM;B-KSIF;Klasické šifry;5.12.;3;bc300;26.1.;2;bc150
+ÚIM;B-LA;Lineárna algebra;4.1.;2;všetky 300;3.2.;2;ab+bc300
+ÚIM;B-MAT1E;Matematika 1;20.12.;2;300 všetky;23.1.;3;cd+de300, ab+bc150
+ÚIM;B-MAT1I;Matematika 1;20.12.;1;300 všetky;23.1.;2;ab+cd+de300
+ÚIM;B-MAT2E;Matematika 2;4.1.;3;ab+bc300;23.1.;3;ab300
+ÚIM;B-MAT2I;Matematika 2;20.12.;3;300 všetky;23.1.;3;bc300
+ÚIM;B-MAT3;Matematika 3;20.12.;3;300 všetky;23.1.;1;cd+de300
+ÚIM;B-MITP;Manament IT projektov;;;;;;
+ÚIM;B-OS;Operaèné systémy;23.1.;2;bc300;6.2.;2;bc300
+ÚIM;B-PS;Poèítaèové siete;20.1.;2;všetky 300 a 150;6.2.;2;ab+cd300
+ÚIM;B-PT;Programovacie techniky;25.1.;3;ab+bc+cd300;8.2.;2;ab+bc300
+ÚIM;B-SWI;Softvérové ininierstvo;16.1.;4;ab+bc+cd300;2.2.;1;ab+bc300
+ÚIM;I-ASOS;Architektúra softvérovıch systémov;21.12.;1;ab+bc300;31.1.;1;bc300
+ÚIM;I-LOG;Logika;27.1.;1;ab+bc300;8.2.;2;cd300

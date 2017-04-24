@@ -2,4 +2,48 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="FEI_News.Views.Exams">
+    <StackLayout>
+        <SearchBar Placeholder="Hľadaj..." TextChanged="SearchBar_TextChanged"></SearchBar>
+        <ListView x:Name="ExamsListView" IsPullToRefreshEnabled="True" Refreshing="ExamsListView_Refreshing" RowHeight="120">
+            <ListView.Header>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="10" >
+                    <Label Text="Popis" HorizontalOptions="FillAndExpand" />
+                    <Label Text="Dátum" HorizontalOptions="FillAndExpand"/>
+                    <Label Text="Čas/Beh" HorizontalOptions="FillAndExpand"/>
+                    <Label Text="Miestnosť" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Vertical" Padding="10">
+                            <Label Text="{Binding Subject}" TextColor="#005c99"/>
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout HorizontalOptions="StartAndExpand">
+                                    <Label Text="{Binding Place}" TextColor="Gray"/>
+                                    <Label Text="RT:" TextColor="Gray"/>
+                                    <Label Text="OT:" TextColor="Gray"/>
+                                </StackLayout>
+                                <StackLayout HorizontalOptions="StartAndExpand">
+                                    <Label Text=" " TextColor="#005c99"/>
+                                    <Label Text="{Binding F_Date}" TextColor="#005c99"/>
+                                    <Label Text="{Binding S_Date}" TextColor="Gray"/>
+                                </StackLayout>
+                                <StackLayout HorizontalOptions="StartAndExpand">
+                                    <Label Text=" " TextColor="#005c99"/>
+                                    <Label Text="{Binding F_Time}" TextColor="#005c99"/>
+                                    <Label Text="{Binding S_Time}" TextColor="Gray"/>
+                                </StackLayout>
+                                <StackLayout HorizontalOptions="StartAndExpand">
+                                    <Label Text=" " TextColor="#005c99"/>
+                                    <Label Text="{Binding F_Room}" TextColor="#005c99"/>
+                                    <Label Text="{Binding S_Room}" TextColor="Gray"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>
