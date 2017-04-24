@@ -2230,8 +2230,14 @@ namespace FEI_News.Droid
 			// aapt resource value: 0x7f0200a8
 			public const int mr_ic_play_light = 2130837672;
 			
+			// aapt resource value: 0x7f0200ab
+			public const int notification_template_icon_bg = 2130837675;
+			
 			// aapt resource value: 0x7f0200a9
-			public const int notification_template_icon_bg = 2130837673;
+			public const int SplashScreen = 2130837673;
+			
+			// aapt resource value: 0x7f0200aa
+			public const int splashscreen_image = 2130837674;
 			
 			static Drawable()
 			{
@@ -3109,8 +3115,8 @@ namespace FEI_News.Droid
 			// aapt resource value: 0x7f0a015a
 			public const int Animation_Design_BottomSheetDialog = 2131362138;
 			
-			// aapt resource value: 0x7f0a0174
-			public const int AppCompatDialogStyle = 2131362164;
+			// aapt resource value: 0x7f0a0175
+			public const int AppCompatDialogStyle = 2131362165;
 			
 			// aapt resource value: 0x7f0a00a5
 			public const int Base_AlertDialog_AppCompat = 2131361957;
@@ -4212,6 +4218,9 @@ namespace FEI_News.Droid
 			
 			// aapt resource value: 0x7f0a0016
 			public const int Widget_MediaRouter_MediaRouteButton = 2131361814;
+			
+			// aapt resource value: 0x7f0a0174
+			public const int splashscreen = 2131362164;
 			
 			static Style()
 			{

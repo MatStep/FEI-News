@@ -15,6 +15,8 @@ namespace FEI_News.Views
         public Calendar()
         {
             InitializeComponent();
+            Title = "Kalendár";
         }
+
     }
 }

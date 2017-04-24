@@ -25,13 +25,12 @@ namespace FEI_News
             // Here you can define title for item, 
             // icon on the left side, and page that you want to open after selection
             var page1 = new MasterPageItem() { Title = "Články", Icon = "ic_shortcut_format_color_text.png", TargetType = typeof(Articles) };
-            var page2 = new MasterPageItem() { Title = "Šablóny", Icon = "itemIcon2.png", TargetType = typeof(Templates) };
-            var page3 = new MasterPageItem() { Title = "Otváracie hodiny", Icon = "itemIcon3.png", TargetType = typeof(OpeningHours) };
-            var page4 = new MasterPageItem() { Title = "Zdroje informácií", Icon = "itemIcon4.png", TargetType = typeof(InformationSources) };
-            var page5 = new MasterPageItem() { Title = "Kalendár udalostí", Icon = "itemIcon5.png", TargetType = typeof(Calendar) };
-            var page6 = new MasterPageItem() { Title = "Softvér pre študentov", Icon = "itemIcon6.png", TargetType = typeof(Software) };
-            var page7 = new MasterPageItem() { Title = "Harmonogram štúdia", Icon = "itemIcon7.png", TargetType = typeof(StudySchedule) };
-            var page8 = new MasterPageItem() { Title = "Rozvrh skúšok", Icon = "itemIcon8.png", TargetType = typeof(Exams) };
+            var page2 = new MasterPageItem() { Title = "Šablóny", Icon = "ic_shortcut_filter_none.png", TargetType = typeof(Templates) };
+            var page3 = new MasterPageItem() { Title = "Otváracie hodiny", Icon = "ic_shortcut_access_time.png", TargetType = typeof(OpeningHours) };
+            var page4 = new MasterPageItem() { Title = "Zdroje informácií", Icon = "ic_shortcut_info_outline.png", TargetType = typeof(InformationSources) };
+            var page5 = new MasterPageItem() { Title = "Softvér pre študentov", Icon = "ic_shortcut_cloud_download.png", TargetType = typeof(Software) };
+            var page6 = new MasterPageItem() { Title = "Harmonogram štúdia", Icon = "ic_shortcut_school.png", TargetType = typeof(StudySchedule) };
+            var page7 = new MasterPageItem() { Title = "Rozvrh skúšok", Icon = "ic_shortcut_border_color.png", TargetType = typeof(Exams) };
 
             // Adding menu items to menuList
             menuList.Add(page1);
@@ -41,7 +40,6 @@ namespace FEI_News
             menuList.Add(page5);
             menuList.Add(page6);
             menuList.Add(page7);
-            menuList.Add(page8);
 
             // Setting our list to be ItemSource for ListView in MainPage.xaml
             navigationDrawerList.ItemsSource = menuList;
